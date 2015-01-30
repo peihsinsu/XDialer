@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/helpLayout" 
+    android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res/com.xdialer">
+
+<ScrollView 
+		android:id="@+id/ScrollView01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+
+<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:stretchColumns="1">
+		
+		<!-- Service Status -->
+	    <TableRow android:layout_gravity="left" android:background="#FF001111">
+			<TextView 
+				android:text="@string/service_status" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textStyle="bold" 
+				android:layout_span="2"
+				android:textSize="16sp">
+			</TextView>
+			<ImageButton android:id="@+id/qes_service" 
+		  		android:layout_width="wrap_content" 
+		  		android:layout_height="wrap_content" 
+		  		android:src="@drawable/iconquestion" 
+		  		android:background="#000000"
+				android:padding="3dip" 
+		  		android:layout_gravity="center_vertical|center_horizontal"/>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/enable_service" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			<CheckBox android:id="@+id/help_service_switch" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp"></CheckBox>
+		</TableRow>
+		
+		<!-- Configure Pattern -->
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left" android:background="#FF001111">
+			<TextView 
+				android:text="@string/config_pattern" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textStyle="bold" 
+				android:layout_span="2"
+				android:textSize="16sp">
+			</TextView>
+			<ImageButton android:id="@+id/qes_pattern" 
+		  		android:layout_width="wrap_content" 
+		  		android:layout_height="wrap_content" 
+		  		android:src="@drawable/iconquestion" 
+		  		android:background="#000000"
+		  		android:layout_gravity="center_vertical|center_horizontal"/>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/pattern" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/pattern" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp"
+				android:text="P,M,L,"></EditText>
+			
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/block_prefix" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/block_prefix" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/block_midfix" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/block_midfix" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/block_postfix" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/block_postfix" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		
+		<!-- Configure Dial Include/Exclude Rule -->
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left" android:background="#FF001111">
+			<TextView 
+				android:text="@string/config_filter_rule" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textStyle="bold" 
+				android:layout_span="2"
+				android:textSize="16sp">
+			</TextView>
+			<ImageButton android:id="@+id/qes_rule" 
+		  		android:layout_width="wrap_content" 
+		  		android:layout_height="wrap_content" 
+		  		android:src="@drawable/iconquestion" 
+		  		android:background="#000000"
+		  		android:layout_gravity="center_vertical|center_horizontal"/>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/config_filter_type" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<Spinner android:layout_width="wrap_content" 
+				android:id="@+id/spinner_filter_type" 
+				android:layout_height="45dip" 
+				></Spinner>
+		</TableRow>
+		
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/start_with" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/start_width" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/end_with" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/end_width" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="left">
+			<TextView 
+				android:text="@string/include_of" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:padding="3dip"></TextView>
+			
+			<EditText android:id="@+id/include_of" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_span="2"
+				android:padding="3dip" 
+				android:layout_marginTop="10sp" 
+				android:layout_marginBottom="10sp" 
+				android:phoneNumber="true"></EditText>
+		</TableRow>
+		<View
+	        android:layout_height="2dip"
+	        android:background="#FF909090" />
+	    <TableRow android:layout_gravity="center" android:gravity="center">
+			<Button android:id="@+id/help_setup_prefix" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" android:text="@string/setup"></Button>
+	    </TableRow>
+</TableLayout>
+
+</ScrollView>
+</LinearLayout>

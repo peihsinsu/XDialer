@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/android:list" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+<TableLayout 
+	android:id="@+id/TableLayout01" 
+	android:layout_width="fill_parent" 
+	android:stretchColumns="2" 
+	android:layout_height="wrap_content">
+<TableRow android:layout_gravity="left" android:gravity="left">
+	<ImageView android:id="@+id/title_pic" android:src="@drawable/tabcontact"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="left">
+	</ImageView>
+	<TextView android:id="@+id/row_entry" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="20sp"
+		android:text="----" 
+		android:layout_gravity="left"/>
+</TableRow>
+<TableRow android:layout_gravity="right" android:gravity="right">
+	<TextView android:id="@+id/row_entry" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="16sp"
+		android:text="TEL:" 
+		android:layout_gravity="left"/>
+	<TextView android:id="@+id/row_entry2" android:layout_width="wrap_content"
+		android:text="----"
+		android:layout_height="wrap_content" android:textSize="16sp" />
+</TableRow>
+</TableLayout>
+</LinearLayout>

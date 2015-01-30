@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/widget_root"
+  android:layout_width="72dp" 
+  android:orientation="vertical" 
+  android:layout_height="72dp"
+  android:background="#00000000"
+  >
+  	<ImageButton 
+  		android:id="@+id/WidgeImageButton01" 
+  		android:layout_width="wrap_content" 
+  		android:layout_height="wrap_content" 
+  		android:src="@drawable/icon" 
+  		android:background="#000000"
+  		android:layout_gravity="center_vertical|center_horizontal"/>
+  	
+  	<TextView 
+  		android:text="XDialer" 
+  		android:id="@+id/WidgetText"
+  		android:layout_gravity="center_vertical|center_horizontal" 
+  		android:layout_width="wrap_content" 
+  		android:layout_height="wrap_content"
+  		android:textColor="#FFFFFF"
+  		android:background="#000000"/>
+ 	
+</LinearLayout>
+

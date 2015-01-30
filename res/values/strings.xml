@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="setup">Setup</string>
+    <string name="config_content">
+    This software is help people need to dial a number that has prefix. 
+    When using this software, dial will have choice to useing prefix or not. 
+    And you can configure your  specific prefix under the following  input column.
+    PS: The special number like WAIT, WILD, PAUSE are different to different phones. Please reference the code of yours:</string>
+    <string name="config_title">Configuration</string>
+    <string name="PhoneBook">Phone Book</string>
+    <string name="InputNumber">Input Phone Number</string>
+    <string name="Dial">= Dial =</string>
+    <string name="hello">This is a customize dialer application. You can put a number into the column and press dial to choice your dial method.</string>
+    <string name="app_name">XDialer</string>
+    <string name="phoneBookActivity">Phone Book</string>
+	<string name="menu_exit">EXIT</string>
+	<string name="menu_config">CONFIG</string>
+	<string name="menu_phonebook">CONTACT</string>
+	
+	<string name="tab_dial">DIAL</string>
+	<string name="tab_config">CONFIG</string>
+	<string name="tab_phonebook">CONTACT</string>
+	<string name="tab_help">HELP</string>
+	
+	<string name="service_status">XDailer Service Status</string>
+	
+	<string name="prefix">Prefix</string>
+	<string name="enable_service">Enabled Service</string>
+	<string name="config_filter_rule">Dial Number (DN) Filter Rule</string>
+	<string name="config_filter_type">Filter Type</string>
+	<string name="start_with">DN Start With</string>
+	<string name="end_with">DN End With</string>
+	<string name="include_of">DN Include</string>
+	
+	<string name="block_prefix">Prefix(P)</string>
+	<string name="block_midfix">Middle-fix(M)</string>
+	<string name="block_postfix">Last-fix(L)</string>
+	
+	<string name="pattern">Pattern</string>
+	
+	<string name="config_pattern">Configure Number Pattern</string>
+	
+	<string name="help_rule_config">How to configure a rule:\n
+		Rule has 2 type: include/exclude, and there are 3 condition can use for filter dial number: start with, end with, include.
+		The rule set for XDialer service will include/exclude the conditions you configured.\n
+		EX: Filter Type = Include, DN Start With = 0953\n
+		Then the XDialer service will only apply to the number start with 0953*.
+	</string>
+	<string name="help_service_config">
+		Service can be default On or Off. If XDialer service On, the original dialer dial action will apply the configured pattern, and vice versa.\n
+	</string>
+	<string name="help_pattern_config">
+		XDialer provide 3 columns (P,M,L) for configure prefix. And you can use pattern column configure to merge the 3 columns (P,M,L).\n
+		EX: pattern = P,M,L and prefix=23456789, midfix=0, lastfix=3333 and dial a number 0953333333\n
+		Then the XDialer service will append 2345678,0,333 to your dial number like 2345678,0,3330953333333
+	</string>
+	
+	<string name="config_for_dial">Include</string>
+	<string name="config_for_not_dial">Exclude</string>
+	<string name="config_for_no_filter">----</string>
+</resources>

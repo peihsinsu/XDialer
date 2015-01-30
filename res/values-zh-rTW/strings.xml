@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="setup">設定</string>
+    <string name="config_content">
+    本軟體為協助作客製化前綴撥號使用，即是將撥號之號碼前面添加某個設定好的號碼，並且透過您所設定好的過濾方式與條件來控制需要添加前綴的號碼。
+    本軟體可應用於撥打國際長途電話時候，使用電信業者提供之特殊二次撥號的服務，相關設定可參考業者之服務設定與申請。
+    PS: 撥號程式之前綴僅可為數字或是某些特殊字元，如： WAIT, WILD, PAUSE，而這些特殊字元將視平台而不同，您的特殊字源代表號列出如下:</string>
+    <string name="config_title">設定</string>
+    <string name="PhoneBook">電話簿</string>
+    <string name="InputNumber">輸入電話號碼</string>
+    <string name="Dial">= 撥號 =</string>
+    <string name="hello">
+    智慧撥號員是一個客製化的撥號程式，透過設定好的前綴與規則，系統將自動在撥號時候添加您所設定的前綴做撥號，以達到特殊撥號的目的。
+    </string>
+    <string name="app_name">智慧撥號員</string>
+    <string name="phoneBookActivity">電話簿</string>
+	<string name="menu_exit">離開</string>
+	<string name="menu_config">設定</string>
+	<string name="menu_phonebook">聯絡人</string>
+	
+	<string name="tab_dial">撥號</string>
+	<string name="tab_config">設定</string>
+	<string name="tab_phonebook">聯絡人</string>
+	<string name="tab_help">協助</string>
+	
+	<string name="service_status">智慧撥號員服務狀態</string>
+	
+	<string name="prefix">前綴</string>
+	<string name="enable_service">開啓服務</string>
+	<string name="config_filter_rule">電話號碼過濾條件</string>
+	<string name="config_filter_type">過濾類別</string>
+	<string name="start_with">號碼開始為</string>
+	<string name="end_with">號碼結束為</string>
+	<string name="include_of">號碼包含</string>
+	
+	<string name="block_prefix">前綴碼(P)</string>
+	<string name="block_midfix">認證碼(M)</string>
+	<string name="block_postfix">抓取碼(L)</string>
+	
+	<string name="pattern">撥號樣板</string>
+	
+	<string name="config_pattern">設定撥號樣板</string>
+	
+	<string name="help_rule_config">
+		如何設定一條規則：\n
+		本服務提供兩種規則：包含(Include)與排除(Exclude)，而條件部份可以設定三種方式，分別是開頭為給定號碼(start with)，結束為給定號碼(end with)與包含某給定號碼(include)。
+		而設定好的規則加條件將會成為您添加前綴的判斷依據。\n
+		例如: 服務規則 = 包含(Include), 撥號號碼開頭為(Start With) = 0953\n
+		則智慧撥號員服務將會僅將撥號至0953開頭的號碼加上前綴。
+	</string>
+	<string name="help_service_config">
+		智慧撥號員的服務可以設定為開啓(ON)或關閉(OFF)，如果開啓服務，則原本的撥號動作將自動會加上所設定的pattern作為前綴，反之，關閉則不會有任何添加前綴的動作。\n
+	</string>
+	<string name="help_pattern_config">
+		智慧撥號員提供3各欄位 (P,M,L) 來作為prefix的設定，您可以使用撥號樣板的設定將此三個欄位做組合。
+		例如設定撥號樣板為："P,M,L,";前綴碼(L)："2345678";認證碼(M)："0";抓取碼："2345";撥號："0953333333"，則代表智慧撥號員服務開啓時候，
+		您將撥出2345678,0,2345,0953609275
+	</string>
+	
+	<string name="config_for_dial">包含(Include)</string>
+	<string name="config_for_not_dial">排除(Exclude)</string>
+	<string name="config_for_no_filter">----</string>
+</resources>
